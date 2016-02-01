@@ -3715,23 +3715,23 @@ select[multiple].input-lg,
 /* line 71, /home/clementine/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-info {
   color: #fff;
-  background-color: #FDB631;
-  border-color: #fdad18; }
+  background-color: #FDDC1F;
+  border-color: #fdd806; }
   /* line 11, /home/clementine/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_buttons.scss */
   .btn-info:hover, .btn-info:focus, .btn-info.focus, .btn-info:active, .btn-info.active, .open > .btn-info.dropdown-toggle {
     color: #fff;
-    background-color: #f9a302;
-    border-color: #d58c02; }
+    background-color: #e7c502;
+    border-color: #c4a702; }
   /* line 21, /home/clementine/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_buttons.scss */
   .btn-info:active, .btn-info.active, .open > .btn-info.dropdown-toggle {
     background-image: none; }
   /* line 29, /home/clementine/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_buttons.scss */
   .btn-info.disabled, .btn-info.disabled:hover, .btn-info.disabled:focus, .btn-info.disabled.focus, .btn-info.disabled:active, .btn-info.disabled.active, .btn-info[disabled], .btn-info[disabled]:hover, .btn-info[disabled]:focus, .btn-info[disabled].focus, .btn-info[disabled]:active, .btn-info[disabled].active, fieldset[disabled] .btn-info, fieldset[disabled] .btn-info:hover, fieldset[disabled] .btn-info:focus, fieldset[disabled] .btn-info.focus, fieldset[disabled] .btn-info:active, fieldset[disabled] .btn-info.active {
-    background-color: #FDB631;
-    border-color: #fdad18; }
+    background-color: #FDDC1F;
+    border-color: #fdd806; }
   /* line 40, /home/clementine/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_buttons.scss */
   .btn-info .badge {
-    color: #FDB631;
+    color: #FDDC1F;
     background-color: #fff; }
 
 /* line 75, /home/clementine/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_buttons.scss */
@@ -5202,10 +5202,10 @@ a.label:hover, a.label:focus {
 
 /* line 56, /home/clementine/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_labels.scss */
 .label-info {
-  background-color: #FDB631; }
+  background-color: #FDDC1F; }
   /* line 7, /home/clementine/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_labels.scss */
   .label-info[href]:hover, .label-info[href]:focus {
-    background-color: #f9a302; }
+    background-color: #e7c502; }
 
 /* line 60, /home/clementine/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_labels.scss */
 .label-warning {
@@ -5459,7 +5459,7 @@ a.thumbnail.active {
 
 /* line 77, /home/clementine/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_progress-bars.scss */
 .progress-bar-info {
-  background-color: #FDB631; }
+  background-color: #FDDC1F; }
   /* line 7, /home/clementine/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_progress-bar.scss */
   .progress-striped .progress-bar-info {
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
@@ -9128,6 +9128,31 @@ button.close {
 .fa-meanpath:before {
   content: ""; }
 
+/* Footer design */
+/* line 2, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/layout/_footer.scss */
+#footer {
+  background: #333333;
+  padding: 30px 0;
+  color: #CCCCCC; }
+
+/* line 7, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/layout/_footer.scss */
+#footer p {
+  margin-top: 17px; }
+
+/* line 10, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/layout/_footer.scss */
+#footer ul {
+  margin-top: 10px; }
+
+/* line 13, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/layout/_footer.scss */
+#footer a {
+  color: #CCCCCC;
+  font-size: 30px;
+  letter-spacing: 20px;
+  transition: color 0.5s ease; }
+  /* line 18, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/layout/_footer.scss */
+  #footer a:hover {
+    color: yellow; }
+
 /* Main class */
 /* line 3, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/layout/_navbar.css.scss */
 .navbar-wagon {
@@ -9363,6 +9388,124 @@ button.close {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   border: white 1px solid; }
 
+/* Banner design */
+/* line 3, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/components/_banner.scss */
+.banner {
+  color: white;
+  text-align: center;
+  height: 80vh;
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+/* line 12, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/components/_banner.scss */
+.banner h1 {
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2); }
+
+/* line 17, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/components/_banner.scss */
+.banner p {
+  font-size: 20px;
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px; }
+
+/* Card design */
+/* line 3, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/components/_card.scss */
+.card {
+  height: 250px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  background-size: cover !important;
+  color: white;
+  position: relative;
+  border-radius: 5px;
+  margin-bottom: 20px; }
+
+/* line 12, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/components/_card.scss */
+.card-user {
+  position: absolute;
+  right: 10px;
+  top: 10px; }
+
+/* line 17, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/components/_card.scss */
+.card-category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px; }
+
+/* line 23, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/components/_card.scss */
+.card-description {
+  position: absolute;
+  bottom: 10px;
+  left: 10px; }
+
+/* line 28, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/components/_card.scss */
+.card-description h2 {
+  font-size: 22px; }
+
+/* line 31, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/components/_card.scss */
+.card-description p {
+  font-size: 15px; }
+
+/* line 34, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/components/_card.scss */
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+  background: black;
+  opacity: 0; }
+
+/* line 43, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/components/_card.scss */
+.card-link:hover {
+  opacity: 0.1; }
+
+/* line 1, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/components/_features.scss */
+.features img {
+  width: 100px; }
+
+/* line 4, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/components/_features.scss */
+.features h2 {
+  font-size: 20px;
+  margin-bottom: 10px; }
+
+/* line 8, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/components/_features.scss */
+.features p {
+  font-size: 15px;
+  font-weight: lighter; }
+
+/* Your form design */
+/* line 4, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/components/_form.scss */
+.form-login {
+  background: #ECECEC;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px #ECECEC; }
+
+/* line 9, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/components/_form.scss */
+.form-login .btn {
+  width: 100%;
+  line-height: 30px; }
+
+/* line 13, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/components/_form.scss */
+.form-login h3 {
+  padding-bottom: 20px;
+  text-align: center; }
+
+/* line 4, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/pages/_home.scss */
+#features {
+  padding: 10em 0; }
+  /* line 6, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/pages/_home.scss */
+  #features img {
+    width: 80px; }
+  /* line 9, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/pages/_home.scss */
+  #features h2 {
+    font-size: 20px;
+    font-weight: bold; }
+
 /*
 ==============================================
 CSS3 ANIMATION CHEAT SHEET
@@ -9381,7 +9524,7 @@ justin@justinaguilar.com
 slideDown
 ==============================================
 */
-/* line 23, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/vendor/_animation_cheat_sheet.css.scss */
+/* line 24, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/vendor/_animation_cheat_sheet.css.scss */
 .slideDown {
   animation-name: slideDown;
   -webkit-animation-name: slideDown;
@@ -9409,7 +9552,7 @@ slideDown
 slideUp
 ==============================================
 */
-/* line 85, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/vendor/_animation_cheat_sheet.css.scss */
+/* line 86, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/vendor/_animation_cheat_sheet.css.scss */
 .slideUp {
   animation-name: slideUp;
   -webkit-animation-name: slideUp;
@@ -9437,7 +9580,7 @@ slideUp
 slideLeft
 ==============================================
 */
-/* line 147, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/vendor/_animation_cheat_sheet.css.scss */
+/* line 148, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/vendor/_animation_cheat_sheet.css.scss */
 .slideLeft {
   animation-name: slideLeft;
   -webkit-animation-name: slideLeft;
@@ -9465,7 +9608,7 @@ slideLeft
 slideRight
 ==============================================
 */
-/* line 209, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/vendor/_animation_cheat_sheet.css.scss */
+/* line 210, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/vendor/_animation_cheat_sheet.css.scss */
 .slideRight {
   animation-name: slideRight;
   -webkit-animation-name: slideRight;
@@ -9493,7 +9636,7 @@ slideRight
 slideExpandUp
 ==============================================
 */
-/* line 271, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/vendor/_animation_cheat_sheet.css.scss */
+/* line 272, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/vendor/_animation_cheat_sheet.css.scss */
 .slideExpandUp {
   animation-name: slideExpandUp;
   -webkit-animation-name: slideExpandUp;
@@ -9527,7 +9670,7 @@ slideExpandUp
 expandUp
 ==============================================
 */
-/* line 351, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/vendor/_animation_cheat_sheet.css.scss */
+/* line 352, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/vendor/_animation_cheat_sheet.css.scss */
 .expandUp {
   animation-name: expandUp;
   -webkit-animation-name: expandUp;
@@ -9551,7 +9694,7 @@ expandUp
 fadeIn
 ==============================================
 */
-/* line 400, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/vendor/_animation_cheat_sheet.css.scss */
+/* line 401, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/vendor/_animation_cheat_sheet.css.scss */
 .fadeIn {
   animation-name: fadeIn;
   -webkit-animation-name: fadeIn;
@@ -9578,7 +9721,7 @@ fadeIn
 expandOpen
 ==============================================
 */
-/* line 456, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/vendor/_animation_cheat_sheet.css.scss */
+/* line 457, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/vendor/_animation_cheat_sheet.css.scss */
 .expandOpen {
   animation-name: expandOpen;
   -webkit-animation-name: expandOpen;
@@ -9604,7 +9747,7 @@ expandOpen
 bigEntrance
 ==============================================
 */
-/* line 512, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/vendor/_animation_cheat_sheet.css.scss */
+/* line 513, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/vendor/_animation_cheat_sheet.css.scss */
 .bigEntrance {
   animation-name: bigEntrance;
   -webkit-animation-name: bigEntrance;
@@ -9641,7 +9784,7 @@ bigEntrance
 hatch
 ==============================================
 */
-/* line 593, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/vendor/_animation_cheat_sheet.css.scss */
+/* line 594, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/vendor/_animation_cheat_sheet.css.scss */
 .hatch {
   animation-name: hatch;
   -webkit-animation-name: hatch;
@@ -9674,7 +9817,7 @@ hatch
 bounce
 ==============================================
 */
-/* line 666, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/vendor/_animation_cheat_sheet.css.scss */
+/* line 667, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/vendor/_animation_cheat_sheet.css.scss */
 .bounce {
   animation-name: bounce;
   -webkit-animation-name: bounce;
@@ -9704,7 +9847,7 @@ bounce
 pulse
 ==============================================
 */
-/* line 730, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/vendor/_animation_cheat_sheet.css.scss */
+/* line 731, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/vendor/_animation_cheat_sheet.css.scss */
 .pulse {
   animation-name: pulse;
   -webkit-animation-name: pulse;
@@ -9728,7 +9871,7 @@ pulse
 floating
 ==============================================
 */
-/* line 777, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/vendor/_animation_cheat_sheet.css.scss */
+/* line 778, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/vendor/_animation_cheat_sheet.css.scss */
 .floating {
   animation-name: floating;
   -webkit-animation-name: floating;
@@ -9749,7 +9892,7 @@ floating
 tossing
 ==============================================
 */
-/* line 818, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/vendor/_animation_cheat_sheet.css.scss */
+/* line 819, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/vendor/_animation_cheat_sheet.css.scss */
 .tossing {
   animation-name: tossing;
   -webkit-animation-name: tossing;
@@ -9770,7 +9913,7 @@ tossing
 pullUp
 ==============================================
 */
-/* line 859, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/vendor/_animation_cheat_sheet.css.scss */
+/* line 860, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/vendor/_animation_cheat_sheet.css.scss */
 .pullUp {
   animation-name: pullUp;
   -webkit-animation-name: pullUp;
@@ -9802,7 +9945,7 @@ pullUp
 pullDown
 ==============================================
 */
-/* line 928, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/vendor/_animation_cheat_sheet.css.scss */
+/* line 929, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/vendor/_animation_cheat_sheet.css.scss */
 .pullDown {
   animation-name: pullDown;
   -webkit-animation-name: pullDown;
@@ -9834,7 +9977,7 @@ pullDown
 stretchLeft
 ==============================================
 */
-/* line 997, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/vendor/_animation_cheat_sheet.css.scss */
+/* line 998, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/vendor/_animation_cheat_sheet.css.scss */
 .stretchLeft {
   animation-name: stretchLeft;
   -webkit-animation-name: stretchLeft;
@@ -9866,7 +10009,7 @@ stretchLeft
 stretchRight
 ==============================================
 */
-/* line 1066, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/vendor/_animation_cheat_sheet.css.scss */
+/* line 1067, /home/clementine/code/clementinoux/fullstack-challenges/static-airbnb/source/stylesheets/vendor/_animation_cheat_sheet.css.scss */
 .stretchRight {
   animation-name: stretchRight;
   -webkit-animation-name: stretchRight;
