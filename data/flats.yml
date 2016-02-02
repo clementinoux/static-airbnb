@@ -1,0 +1,20 @@
+seb:
+  name: Seb's home
+  summary: CHarming room in Paris
+  picture: card-paris.jpg
+  owner_picture: seb.jpg
+  city: Paris
+romain:
+  name: Romain's home
+  summary: CHarming room in London
+  picture: card-london.jpeg
+  owner_picture: romain.jpeg
+  city: London
+anne:
+  name: Anne's home
+  summary: CHarming room in Brussels
+  picture: card-brussels.jpeg
+  owner_picture: anne.jpeg
+  city: Brussels
+  rating: 4
+  # autant de champs que voulus...

@@ -1,0 +1,18 @@
+<h1 class="text-center">
+  <% 1 + 2 %>  <!-- execute le ruby sans injecter le résultat -->
+  <%= 1 + 2 %>  <!-- injecte le résultat -->
+</h1>
+
+
+<% members = %w(romain anne seb) %>
+
+
+<div class="container- text-center">
+  <ul class="list-inline">
+    <% members.each do |member| %>
+      <li> <img src="http://placehold.it/80x80" alt="" class="omg-circle">
+      <h3><%= member %></h3>
+      </li>
+    <% end %>
+  </ul>
+</div>

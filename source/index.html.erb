@@ -1,10 +1,146 @@
 ---
 title: Le Wagon Middleman boilerplate
 ---
+  <!-- Your banner code -->
+  <div class="banner" style="background: linear-gradient(-225deg, rgba(168,140,1,0.6) 0%, rgba(223,205,130,0.6) 50%), url('images/background.jpg');">
+    <div class="banner-content">
+      <h1>WELCOME HOME</h1>
+      <p>Very cool stuff, useful and smart</p>
+      <a class="btn btn-primary btn-lg">GET IT</a>
+      <div class="container" id="features">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="form-login form-inline padded">
+              <form action="#">
+                <input type="email" class="form-control inputdefault" placeholder="check in">
+                <input type="password" class="form-control inputdefault" placeholder="check out">
+                <select class="form-control inputdefault">
+                  <option value="1">1 person </option>
+                  <option value="2">2 persons </option>
+                  <option value="3">3 persons</option>
+                </select>
+                <input type="submit" value="Search" class="btn btn-primary">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<div class="welcome text-center padded">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+<!-- Your features code -->
+<div class="text-center features padded">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <img src="images/globe.png" alt="globe">
+        <h2>Discover the world</h2>
+        <p>The earth is your new home.</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <img src="images/dollar.png" alt="dollar">
+        <h2>Pay online</h2>
+        <p>No cash issues anymore.</p>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <img src="images/beer.png" alt="beer">
+        <h3>Meet people</h2>
+          <p>Discover new culture and lifestyle.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <img src="images/heart.png" alt="heart">
+          <h2>Share and love</h2>
+          <p>Join a community you will love.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Your cards code -->
+  <div class="wrapper-grey padded">
+    <div class="container">
+      <div class="row">
+        <% data.flats.each do |owner, flat| %>
+          <div class="col-xs-12 col-sm-4">
+            <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url("<%= image_path flat.picture %>")";
+              <div class="card-category"><%= flat.city %></div>
+              <div class="card-description">
+                <h2><%= flat.name %></h2>
+                <p><%= flat.summary %></p>
+              </div>
+              <%= image_tag flat.owner_picture, class: "img-circle" %>
+        <% end %>
+            <a class="card-link" href="#" ></a>
+          </div>
+        </div>
+<!--         <div class="col-xs-12 col-sm-4">
+
+          <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-brussels.jpeg');">
+            <div class="card-category">Popular</div>
+            <div class="card-description">
+              <h2>Some stuff</h2>
+              <p>Very cool stuff, useful and smart</p>
+            </div>
+            <img class="card-user avatar" src="images/anne.jpg">
+            <a class="card-link" href="#" ></a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-london.jpeg');">
+            <div class="card-category">Popular</div>
+            <div class="card-description">
+              <h2>Some stuff</h2>
+              <p>Very cool stuff, useful and smart</p>
+            </div>
+            <img class="card-user avatar" src="images/romain.jpeg">
+            <a class="card-link" href="#" ></a>
+          </div> -->
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Your newsletter code -->
+  <div class="text-center padded">
+
+    <h1>Get news from us</h1>
+    <p>Leave us your mail and get news from us</p>
+
+    <form action="#" class="form-inline">
+      <input type="email" class="form-control" placeholder="bob@gmail.com">
+      <input type="submit" value="Subscribe" class="btn btn-primary">
+    </form>
+  </div>
+
+  <!-- Your map code -->
+
+  <div id="map" style="width: 100%; height: 400px;"></div>
+
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+  <script type="text/javascript">
+    var myLatlng = new google.maps.LatLng(48.852937,2.364178);
+
+    var myOptions = {
+      zoom: 16,
+      center: myLatlng,
+      scrollwheel: false,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+  styles: [{"featureType":"landscape","stylers":[{"visibility":"on"},{"color":"#e7cd79"},{"weight":0.1}]},{"featureType":"water","stylers":[{"visibility":"simplified"},{"color":"#282828"}]},{"featureType":"landscape.natural.landcover","elementType":"geometry","stylers":[{"visibility":"on"},{"color":"#d6bc68"}]},{"featureType":"administrative.locality","elementType":"geometry","stylers":[{"visibility":"off"},{"color":"#d6bc68"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"visibility":"on"},{"color":"#d6bc68"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"on"},{"color":"#d6bc68"}]},{"featureType":"transit.station.airport","elementType":"geometry.fill","stylers":[{"visibility":"off"},{"color":"#d6bc68"}]},{"featureType":"poi"},{"featureType":"transit.line","stylers":[{"color":"#d6bc68"},{"visibility":"on"}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"visibility":"off"},{"weight":1},{"color":"#e9d9a6"}]},{"featureType":"road","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#e9d9a6"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#e9d9a6"}]},{"featureType":"poi.business","stylers":[{"color":"#e9d9a6"},{"visibility":"on"}]},{},{"featureType":"poi.government","stylers":[{"visibility":"off"}]},{"featureType":"poi.school","stylers":[{"visibility":"off"}]},{"featureType":"administrative","stylers":[{"visibility":"off"}]},{"featureType":"poi.medical","stylers":[{"visibility":"off"}]},{"featureType":"poi.attraction","elementType":"geometry","stylers":[{"visibility":"off"},{"color":"#cfb665"}]},{"featureType":"poi.place_of_worship","stylers":[{"visibility":"off"}]},{"featureType":"poi.sports_complex","stylers":[{"visibility":"off"}]},{},{"featureType":"road.arterial","elementType":"labels.text.stroke","stylers":[{"color":"#cfb665"},{"visibility":"off"}]},{"featureType":"road.highway","elementType":"labels.text","stylers":[{"visibility":"off"}]},{"featureType":"road.highway.controlled_access","stylers":[{"visibility":"off"}]},{"featureType":"road"}] // TODO: replace [] by array from https://snazzymaps.com/
+};
+
+var map = new google.maps.Map(document.getElementById('map'), myOptions);
+var marker = new google.maps.Marker({
+  position: myLatlng,
+  map: map,
+  title: "You are here!"
+});
+</script>
+
+<!-- Your footer code -->
+
+
